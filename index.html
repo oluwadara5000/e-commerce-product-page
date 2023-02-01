@@ -48,8 +48,9 @@
         <div class="cart">
           <img src="/images/icon-cart.svg" id="show-cart" alt="" />
           <img src="/images/icon-cart.svg" id="hide-cart" alt="" />
+          <img src="/images/icon-cart.svg" id="delete-cart-behaviour" alt="" />
 
-          
+
 
           <div id="cartAmount" class="cartAmount">0</div>
         </div>
@@ -64,18 +65,23 @@
     </div>
 
     <div id="window-include" class="window-include">
-      <div>
-<img src="/images/image-product-1-thumbnail.jpg" alt="">
+      <h1>Cart</h1>
+      <hr>
+      <div class="window-include-container">
+        <div class="window-include-image">
+          <img src="/images/image-product-1-thumbnail.jpg" alt="">
+        </div>
+        <div class="window-include-details">
+          <h1 id="product-desc">Fall Limited Edition Sneakers</h1>
+          <p><span id="unit-cost">$125</span> x <span id="window-quantity"></span> ---Total = <span id="window-price">$
+            </span></p>
+        </div>
+        <div id="delete" class="delete-icon">
+          <img src="/images/icon-delete.svg" alt="">
+        </div>
       </div>
-      <div>
-        <h1>Fall Limited Edition Sneakers</h1>
-        <p>$125 x <span></span> $</p>
-      </div>
-      <div>
-        <img src="/images/icon-delete.svg" alt="">
-      </div>
-      
-<button>Checkout</button>
+
+      <button>Checkout</button>
     </div>
 
     <div class="container">
@@ -115,6 +121,41 @@
       </div>
     </div>
   </section>
+  <!-- <div class="lightbox-gallery">
+    <div class="lightbox">
+      <i class="fa-solid fa-xmark"></i>
+
+      <div class="lightbox-button previous" previous-button>
+        <button>
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+      </div>
+
+      <div class="lightbox-container" lightbox-container>
+        <div class="image-slide">
+          <img src="/images/image-product-1.jpg" alt="" />
+        </div>
+
+        <div class="image-slide">
+          <img src="images/image-product-2.jpg" alt="" />
+        </div>
+
+        <div class="image-slide">
+          <img src="/images/image-product-3.jpg" alt="" />
+        </div>
+
+        <div class="image-slide">
+          <img src="/images/image-product-4.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="lightbox-button next" next-button>
+        <button>
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div> -->
   <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

@@ -180,6 +180,59 @@ header ul > li:hover{
   text-align: center;
 }
 
+.window-include{
+  width: 360px;
+  height: 260px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 20px;
+  top: 10%;
+  right: 15%;
+   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.window-include > h1{
+  margin-bottom: 15px;
+}
+
+.window-include hr{
+   margin-bottom: 30px;
+}
+
+.window-include-container{
+  display: flex;
+  /* padding: 20px; */
+  height: 50px;
+  gap: 15px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.window-include-image img{
+  height: 100%;
+  border-radius: 7px;
+}
+
+.window-include-details h1{
+font-size: 16px;
+}
+
+.window-include button{
+  width: 100%;
+}
+
+#window-price{
+  font-weight: 800;
+}
+
+.delete-icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
 .counter{
   display: flex;
   align-items: center;
@@ -188,6 +241,12 @@ header ul > li:hover{
   gap: 30px;
   font-weight: 700;
   cursor: pointer;
+}
+
+.writeup-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #decrease:hover, #increase:hover{
@@ -223,3 +282,68 @@ button:focus{
   right: -15px;
   border-radius: 5px;
 }
+
+/* .lightbox-gallery{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  height: 100%;
+  padding-top: 200px;
+}
+
+.lightbox {
+  --current-slide: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.lightbox-button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  margin: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.lightbox-button button{
+  background-color: #ffffff;
+   border-radius: 50%;
+   padding: 17px 20px;
+   color: #000000;
+}
+
+.lightbox-button button:hover{
+  opacity: 1;
+  color: hsl(26, 100%, 55%);
+}
+
+.next {
+  right: 0;
+}
+
+.lightbox-container{
+  display: flex;
+  width: 100%;
+  transition: transform 0.8s;
+  transform: translateX(calc(-100% * var(--current-slide)));
+}
+
+.image-slide {
+  flex: 0 0 100%;
+}
+
+.image-slide img {
+  width: 100%;
+}
+
+.fa-xmark{
+  color: #ffffff;
+  float: right;
+} */
