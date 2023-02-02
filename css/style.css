@@ -85,6 +85,7 @@ header ul > li:hover{
   display: flex;
   height: 90px;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .thumbnail-container img{
@@ -283,67 +284,112 @@ button:focus{
   border-radius: 5px;
 }
 
-/* .lightbox-gallery{
-  width: 100%;
+.lightbox{
+   --current-slide: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
   position: absolute;
-  top: 0;
-  background-color: black;
-  height: 100%;
-  padding-top: 200px;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
 }
 
-.lightbox {
-  --current-slide: 0;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
-  
+.image-container{
+   flex: 0 0 100%;
+   
+}
+
+.image-container img{
+  width: 550px;
 }
 
 .lightbox-button{
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0;
-  margin: 10px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.lightbox-button button{
+  width: 3%;
+  height: 3%;
   background-color: #ffffff;
-   border-radius: 50%;
-   padding: 17px 20px;
-   color: #000000;
+  border-radius: 50%;
+  z-index: 2;
+  top: 50%;
+  padding: 30px;
+  transform: translateY(-50%);
+  left: 34%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.lightbox-button button:hover{
-  opacity: 1;
+.lightbox-button:hover{
   color: hsl(26, 100%, 55%);
 }
 
-.next {
-  right: 0;
+.next{
+  left: 63%;
 }
 
 .lightbox-container{
   display: flex;
   width: 100%;
-  transition: transform 0.8s;
+  position: absolute;
+  left: 36%;
+  transition: transform 0.4s;
   transform: translateX(calc(-100% * var(--current-slide)));
 }
 
-.image-slide {
-  flex: 0 0 100%;
+#close{
+  position: absolute;
+  z-index: 5;
+  top: 19%;
+  right: 35.3%;
+  cursor: pointer;
 }
 
-.image-slide img {
-  width: 100%;
-}
 
 .fa-xmark{
+  font-size: 30px;
   color: #ffffff;
-  float: right;
-} */
+}
+
+.thumbnail:hover{
+  opacity: 0.5;
+}
+
+.thumbnail-container div:has(.thumbnail:hover) {
+  border: 3px solid hsl(26, 100%, 55%);
+  border-radius: 10px;
+}
+
+.fa-xmark:hover{
+  color: hsl(26, 100%, 55%);
+}
+
+.lightbox-thumbnail-container{
+  z-index: 1;
+  position: absolute;
+  top: 80%;
+  display: flex;
+  gap: 40px;
+}
+
+.lightbox-thumbnail-container img{
+  width: 90px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.lightbox-thumbnail-container img:hover{
+  opacity: 0.5;
+}
+
+.lightbox-thumbnail-container div:has(.lightbox-thumbnail:hover) {
+  border: 3px solid hsl(26, 100%, 55%);
+  border-radius: 10px;
+}
+
+
+
+/* LOOK FOR WHY LIGHTBOX NOT DISPLAYING BECAUSE OF THUMBNAIL CONTAINER BELOW IT */
