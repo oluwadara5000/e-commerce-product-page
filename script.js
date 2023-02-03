@@ -6,7 +6,7 @@ const lightbox = document.querySelector("[lightbox]");
 
 const slidesContainer = document.querySelector("[lightbox-container]");
 
-// document.getElementById("lightbox").style.display = "none"
+document.getElementById("lightbox").style.display = "none"
 
 let currentSlide = 0;
 const slidesNumber = slidesContainer.children.length;
