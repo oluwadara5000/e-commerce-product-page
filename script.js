@@ -6,7 +6,7 @@ const lightbox = document.querySelector("[lightbox]");
 
 const slidesContainer = document.querySelector("[lightbox-container]");
 
-document.getElementById("lightbox").style.display = "none"
+document.getElementById("lightbox").style.display = "none";
 
 let currentSlide = 0;
 const slidesNumber = slidesContainer.children.length;
@@ -43,6 +43,11 @@ var linkTwo = document.getElementById("link-II");
 var linkThree = document.getElementById("link-III");
 var linkFour = document.getElementById("link-IV");
 var closeLightbox = document.getElementById("close");
+var blurEffect = document.getElementById("panel-blur");
+var openPanel = document.getElementById("open-panel");
+var panel = document.getElementById("panel");
+var panelList = document.getElementById("panel-list");
+var closePanel = document.getElementById("close-panel");
 
 document.getElementById("cartAmount").style.display = "none";
 document.getElementById("window-empty").style.display = "none";
@@ -73,6 +78,8 @@ function increase() {
   count += 1;
   document.getElementById("quantity").innerHTML = count;
   document.getElementById("cartAmount").style.display = "block";
+  document.getElementById("window-empty").style.display = "none";
+  document.getElementById("window-include").style.display = "block";
   document.getElementById("cartAmount").innerHTML = count;
   document.getElementById("window-quantity").innerHTML = count;
   console.log(count);
@@ -127,7 +134,7 @@ deleteCart.addEventListener("click", function () {
 
 closeLightbox.addEventListener("click", function () {
   document.getElementById("lightbox").style.display = "none";
-})
+});
 
 link.addEventListener("click", function () {
   document.getElementById("lightbox").style.display = "flex";
@@ -144,3 +151,31 @@ linkThree.addEventListener("click", function () {
 linkFour.addEventListener("click", function () {
   document.getElementById("lightbox").style.display = "flex";
 });
+
+openPanel.addEventListener("click", function () {
+  document.getElementById("panel").style.width = "250px";
+  document.getElementById("panel").style.padding = "25px";
+  document.getElementById("panel-list").style.display = "flex";
+  document.getElementById("close-panel").style.display = "block";
+  document.getElementById("panel-blur").style.display = "block";
+});
+
+closePanel.addEventListener("click", function () {
+  document.getElementById("panel").style.width = "0";
+  document.getElementById("panel").style.padding = "0";
+  document.getElementById("panel-list").style.display = "none";
+  document.getElementById("close-panel").style.display = "none";
+  document.getElementById("panel-blur").style.display = "none";
+});
+
+function myFunction(x) {
+  if (x.matches) {
+    document.getElementById("open-panel").style.display = "block";
+  } else {
+    document.getElementById("open-panel").style.display = "none";
+  }
+}
+
+var x = window.matchMedia("(max-width: 767px)");
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes

@@ -31,6 +31,8 @@
 </head>
 
 <body>
+  <div class="panel-blur" id="panel-blur"></div>
+
   <div id="lightbox" class="lightbox" lightbox>
     <div id="close">
       <i class="fa-solid fa-xmark"></i>
@@ -66,22 +68,34 @@
       <div>
         <img class="lightbox-thumbnail" src="/images/image-product-1-thumbnail.jpg">
       </div>
-    
+
       <div>
         <img class="lightbox-thumbnail" src="/images/image-product-2-thumbnail.jpg">
       </div>
-    
+
       <div>
         <img class="lightbox-thumbnail" src="/images/image-product-3-thumbnail.jpg">
       </div>
-    
+
       <div>
         <img class="lightbox-thumbnail" src="/images/image-product-4-thumbnail.jpg">
       </div>
     </div>
   </div>
   <section>
+    <div class="panel" id="panel">
+      <img src="/images/icon-close.svg" id="close-panel" alt="">
+
+      <ul id="panel-list">
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
     <header>
+      <i class="fa-solid fa-bars" id="open-panel"></i>
       <div class="logo">
         <img src="/images/logo.svg" alt="" />
       </div>
@@ -99,7 +113,7 @@
           <img src="/images/icon-cart.svg" id="show-cart" alt="" />
           <img src="/images/icon-cart.svg" id="hide-cart" alt="" />
           <img src="/images/icon-cart.svg" id="delete-cart-behaviour" alt="" />
-          
+
           <div id="cartAmount" class="cartAmount">0</div>
         </div>
         <img src="/images/image-avatar.png" id="avatar" alt="" />
@@ -149,7 +163,7 @@
           <div>
             <img class="thumbnail" id="link-III" src="/images/image-product-3-thumbnail.jpg">
           </div>
-          
+
           <div>
             <img class="thumbnail" id="link-IV" src="/images/image-product-4-thumbnail.jpg">
           </div>
@@ -166,6 +180,11 @@
           </p>
           <h3>$125.00 <span>50%</span></h3>
           <p id="price">$250.00</p>
+
+          <div class="price-mobile">
+            <h3>$125.00 <span>50%</span></h3>
+            <p id="price-mobile">$250.00</p>
+          </div>
         </div>
         <div class="counter-container">
           <div class="counter">
