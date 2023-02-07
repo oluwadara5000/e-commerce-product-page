@@ -28,6 +28,7 @@ function previousSlide() {
 nextButton.addEventListener("click", nextSlide);
 previousButton.addEventListener("click", previousSlide);
 
+// TO ACCESS ALL ELEMENTS THAT WILL BE NEEDED IN THE SCRIPT
 var btnIncrease = document.getElementById("increase");
 var btnDecrease = document.getElementById("decrease");
 var span = document.getElementById("quantity");
@@ -57,6 +58,7 @@ document.getElementById("delete-cart-behaviour").style.display = "none";
 
 var count = 0;
 
+// FUNCTION FOR WHEN THE MINUS ICON IS CLICKED
 function decrease() {
   if (count > 0) {
     count -= 1;
@@ -74,6 +76,8 @@ function decrease() {
   console.log(count);
 }
 
+
+// FUNCTION FOR WHEN THE "ADD TO CART BUTTON" AND PLUS ICON IS CLICKED
 function increase() {
   count += 1;
   document.getElementById("quantity").innerHTML = count;
@@ -91,6 +95,7 @@ function increase() {
   console.log(c);
 }
 
+// FUNCTION TO CLOSE THE CART WINDOW
 close.addEventListener("click", function () {
   document.getElementById("show-cart").style.display = "block";
   document.getElementById("hide-cart").style.display = "none";
@@ -110,6 +115,8 @@ empty.addEventListener("click", function () {
   }
 });
 
+
+// FUNCTION TO DELETE CART CONTENT
 deleteCartBehaviour.addEventListener("click", function () {
   document.getElementById("hide-cart").style.display = "block";
 
@@ -132,6 +139,8 @@ deleteCart.addEventListener("click", function () {
   document.getElementById("quantity").innerHTML = 0;
 });
 
+
+// FUNCTIONS TO OPEN THE LIGHTBOX GALLERY
 closeLightbox.addEventListener("click", function () {
   document.getElementById("lightbox").style.display = "none";
 });
