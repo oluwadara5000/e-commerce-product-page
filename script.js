@@ -161,6 +161,7 @@ linkFour.addEventListener("click", function () {
   document.getElementById("lightbox").style.display = "flex";
 });
 
+// OPEN HAMBURGER MENU 
 openPanel.addEventListener("click", function () {
   document.getElementById("panel").style.width = "250px";
   document.getElementById("panel").style.padding = "25px";
@@ -169,6 +170,7 @@ openPanel.addEventListener("click", function () {
   document.getElementById("panel-blur").style.display = "block";
 });
 
+// CLOSE HAMBURGER MENU
 closePanel.addEventListener("click", function () {
   document.getElementById("panel").style.width = "0";
   document.getElementById("panel").style.padding = "0";
