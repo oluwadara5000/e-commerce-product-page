@@ -179,6 +179,7 @@ closePanel.addEventListener("click", function () {
   document.getElementById("panel-blur").style.display = "none";
 });
 
+// FUNCTION TO HIDE NAV BAR IN CERTAIN SCREEN SIZE
 function myFunction(x) {
   if (x.matches) {
     document.getElementById("open-panel").style.display = "block";
