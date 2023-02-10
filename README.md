@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/oluwadara5000/e-commerce-product-page)
-- Live Site URL: [Add live site URL here](https://sneaker-ecommerce-store.netlify.app/)
+- Solution URL: [GitHub Repo](https://github.com/oluwadara5000/e-commerce-product-page)
+- Live Site URL: [Live Link](https://sneaker-ecommerce-store.netlify.app/)
 
 ## My process
 
@@ -106,12 +106,12 @@ function increase() {
 
 ### Useful resources
 
-- [Example resource 1](https://youtu.be/-nz9rhyPXFc) - This resource helped me build the shopping cart and also all the behaviours i.e. the quantity and the displaying of total price.
+- [Add to cart feature Using HTML CSS and JS.](https://youtu.be/-nz9rhyPXFc) - This resource helped me build the shopping cart and also all the behaviours i.e. the quantity and the displaying of total price.
 
 
 ## Author
 
-- GitHub - [Add your name here](https://github.com/oluwadara5000)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/oluwadara5000)
+- GitHub - [Odejobi Oluwadara](https://github.com/oluwadara5000)
+- Frontend Mentor - [@oluwadara5000](https://www.frontendmentor.io/profile/oluwadara5000)
 
 
