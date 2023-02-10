@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repo](https://github.com/oluwadara5000/e-commerce-product-page)
-- Live Site URL: [Live Link](https://sneaker-ecommerce-store.netlify.app/)
+- Live Site URL: [Live Site Link](https://sneaker-ecommerce-store.netlify.app/)
 
 ## My process
 
