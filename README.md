@@ -98,11 +98,9 @@ function increase() {
 }
 ```
 
-
 ### Useful resources
 
 - [Add to cart feature Using HTML CSS and JS.](https://youtu.be/-nz9rhyPXFc) - This resource helped me build the shopping cart and also all the behaviours i.e. the quantity and the displaying of total price.
-
 
 ## Author
 
